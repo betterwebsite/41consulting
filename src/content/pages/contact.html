@@ -31,69 +31,67 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+<section id="contact-1700">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Stitch's Center for Process Safety Training</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptates corporis eligendi dolorem hic placeat ipsam a illo eaque, perspiciatis aspernatur omnis praesentium modi? Culpa vitae eos obcaecati tempora inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus ex eveniet, rerum magnam qui?
+            </p>
+            <div class="cs-author">
+                <picture class="cs-profile">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg"
+                            alt="profile" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
-
+                <div class="cs-flex-group">
+                    <img class="cs-signature"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-signature.png"
+                            alt="founder's signature" height="52" width="52" loading="lazy" decoding="async">
+                    <span class="cs-job">Founder of Yokoloko</span>
+                </div>
             </div>
         </div>
-    </section>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1700" name="Contact Form" method="post">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Let's Collaborate</h2>
+            </div>
+            <label class="cs-label">
+                Name *
+                <input class="cs-input" required type="text" id="name-1700" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Email *
+                <input class="cs-input" required type="email" id="email-1700" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" type="number" id="phone-1700" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Message *
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1700"
+                        placeholder="Message"></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Schedule Consultation</button>
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png">
+                <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png"
+                        alt="wind turbine" width="650" height="613">
+            </picture>
+        </form>
+    </div>
+</section>
+                                
 {% endblock %}
